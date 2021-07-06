@@ -1,0 +1,11 @@
+{
+  "name": "cat-facts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "catFacts.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/:./css/"
+  },
+  "author": "",
+  "license": "ISC"
+}
