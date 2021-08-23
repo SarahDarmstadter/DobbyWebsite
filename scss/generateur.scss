@@ -1,6 +1,36 @@
-@import 'accueil.scss';
+@import 'index.scss';
 
 .header
 {
     background: #4083d1;
+    height: 300px;
+    flex-direction: row;
+}
+
+.heard__texte h1
+{
+    font-size: 2em;
+}
+
+.dobby-top
+{
+    width: 300px;
+    margin: 0;
+}
+
+.generateur
+{
+    display: flex;
+    justify-content: center;
+}
+
+.test 
+{
+    width: 40%;
+    border: none;
+}
+
+.bouton-de-lancement
+{
+    width: 10%;
 }
