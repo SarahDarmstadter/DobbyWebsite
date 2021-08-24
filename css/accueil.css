@@ -20,18 +20,14 @@ body {
   position: absolute;
   top: 25%;
   left: 30%;
-  margin-right: 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-family: "Inter", sans-serif;
   color: #e6e4e5;
-  font-size: calc(1em + 7vw);
+  font-size: 6em;
   font-weight: 900;
   text-shadow: -0.0075em 0.0075em 0 #f6f2ff, 0.005em 0.005em 0 #c1a9fc, 0.01em 0.01em 0 #c4adfc, 0.015em 0.015em #c8b1fc, 0.02em 0.02em 0 #cbb6fc, 0.025em 0.025em 0 #cebafc, 0.03em 0.03em 0 #d1befd, 0.035em 0.035em 0 #d4c3fd;
-}
-.title h2 {
-  font-size: calc(1em + 1vw);
 }
 
 .paw {
@@ -45,12 +41,19 @@ body {
 ul {
   list-style: none;
   padding-top: 20%;
-  padding-right: 7%;
+  padding-right: 10%;
 }
 
 ul a {
   text-decoration: none;
-  color: #110c41;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+.liste {
+  visibility: hidden;
 }
 
 .visible {
@@ -65,13 +68,13 @@ ul a {
   position: relative;
   bottom: 29px;
   right: 18%;
-  background: #2979FF;
+  background: #d7e4fc;
 }
 
 .visible a {
   text-decoration: none;
   font-size: 5em;
-  color: white;
+  color: #0c073d;
 }
 
 .visible_ ul {
@@ -79,7 +82,6 @@ ul a {
   z-index: 4;
   list-style: none;
   padding-top: 20%;
-  padding-right: 15%;
 }
 
 /*# sourceMappingURL=accueil.css.map */

@@ -1,6 +1,7 @@
 $grey: #6527f7;
 $background-color: mix(#fff, rgb(12, 7, 61), 2%);
-$bleu_clair:#2979FF;
+$text-color : mix(#fff, #554e51, 85%);
+$bleu_clair:#d7e4fc;
 
 
 *, ::before, ::after {
@@ -19,25 +20,21 @@ $bleu_clair:#2979FF;
     src: url(../assets/police/Lato-Regular.ttf) format('truetype');
 }
 
-
 body 
 {
-    background-color: $background-color
+    background-color: $background-color;
 }
 
-
 .title
-{
-    position: absolute;
+{   position: absolute;
     top: 25%;
     left: 30%;
-    margin-right: 10%;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
     font-family: "Inter", sans-serif;
     color: mix(#fff, #554e51, 85%);
-	font-size: calc(1em + 7vw) ;  
+	font-size: 6em ;  
 	font-weight: 900;
 	text-shadow: 
 		-0.0075em 0.0075em 0 mix(#fff, $grey, 94%),
@@ -48,9 +45,6 @@ body
 		0.025em 0.025em 0 mix(#fff, $grey, 68%),
 		0.03em 0.03em 0 mix(#fff, $grey, 70%),
 		0.035em 0.035em 0 mix(#fff, $grey, 72%);
-        & h2 {
-            font-size: calc(1em + 1vw) ;  
-        }
 }
 
 .paw
@@ -66,12 +60,20 @@ ul
 {
     list-style: none;
     padding-top: 20%;
-    padding-right: 7%;
+    padding-right: 10%;
 }
 
 ul a {
     text-decoration: none;
-    color: $background-color;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.liste
+{
+    visibility: hidden;
 }
 
 .visible
@@ -92,7 +94,7 @@ ul a {
 .visible a {
     text-decoration: none;
     font-size: 5em;
-    color: white;
+    color: #0c073d;
 }
 
 .visible_ ul 
@@ -101,7 +103,6 @@ ul a {
     z-index:4;
     list-style: none;
     padding-top: 20%;
-    padding-right: 15%;
 }
 
 

@@ -5,6 +5,7 @@ let ul = document.getElementById("liste");
 paw.addEventListener('click', function(event){    
     nav.classList.toggle("visible");
     ul.classList.toggle("visible_");
+    ul.classList.toggle("liste");
     console.log("hello")
 });
 
