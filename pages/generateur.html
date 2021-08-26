@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/generateur.css">
+    <link rel="stylesheet" href="../css/gallerie.css">
+    <link rel="stylesheet" href="../css/generateur.css">
+    <script src="https://kit.fontawesome.com/b6c58def4c.js" crossorigin="anonymous"></script>
+    
     <title> Cat facts - Sarah Darmstadter</title>
 
 </head>
     <body>
         <header>
-            <div class="header">
-                <img class="dobby-top" src="images/dobby_soleil.png" alt="dobby1">
-                <div class="header__texte">
-                    <h1 class="titre">Dobby, un Être de lumière angélique </h1>
-                    <p class="sous-titre">A la mignonerie encore jamais égalée!</p> 
-                </div> 
+            <div class="header"> 
+                <a href="accueil.html"><i class="fas fa-arrow-circle-left texte texte__arrow"></i></a>
+                <span class="ligne ligne--gauche"></span>
+                <h1 class="texte">Mood</h1>
+                <span class="ligne ligne--droite"></span>
+            </div>
         </header>
 
         <section>
-            <h2 class="titre__generateur">Quel Dobby êtes-vous aujourd'hui ?</h2>
+            <div class="barre-separation"></div>
+            <h2 class="titre">Quel Dobby êtes-vous aujourd'hui ?</h2>
             <div class="generateur">
-                <input type="image" class="bouton-de-lancement" id="bouton-de-lancement" alt="Zé parti Zé parti" src="paw.svg">
-                <img src="images/19.jpeg" class="test" id="test">
+                <input type="button" value="C'est parti" id="bouton-lancement">
+                <img src="../assets/images/19.jpeg" class="test" id="test">
+                <p id="legende"></p>
             </div>
-            <p class="explication-generateur">Cliquez sur l'image pour arreter mettre fin au suspens. Je ne suis pas encore assez douée pour l'arreter tout seul.</p>
 
 
         </section>
-            <script src="generateur.js"></script>
+            <script src="../JS/generateur.js"></script>
 
             
     </body>
