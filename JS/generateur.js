@@ -9,10 +9,9 @@ let imgArray = [
 let pointeur = 0;
 let legende = document.getElementById("legende");
 let test = document.getElementById("test");
-    test.onclick = ChangerImage; 
-let playing = false;
+let timing;
 
-  function ChangerImage(){
+  function lancement(){
     
     if(pointeur < imgArray.length - 1){
     pointeur++;
@@ -22,26 +21,36 @@ let playing = false;
     }
 
     test.src = imgArray[pointeur].image;
-    legende.classList.toggle("legende_visible");
-
     test.classList.add("lance");
-    let timing = setTimeout("ChangerImage()", 200); 
+    legende.classList.add("legende_invisible");
+    timing = setTimeout("lancement()", 200); 
 
-        if (!playing) {
-        test.addEventListener("click", function(e){
-            test.classList.remove("lance");
 
-            clearTimeout(timing);
-            let imgText = imgArray[Math.floor(Math.random() * imgArray.length)];
-            test.src = imgText.image;
+  }; 
 
-            legende.innerHTML = imgText.texte;
-            console.log("IMAGE NAME =>", imgText);
+  function stop() {
+    clearTimeout(timing);
+    legende.classList.add("legende_visible");
+    legende.classList.remove("legende_invisible")
+    test.classList.remove("lance");
+
+    let imgText = imgArray[Math.floor(Math.random() * imgArray.length)];
+    test.src = imgText.image;
+    legende.innerHTML = imgText.texte;
+  };
+
+  test.addEventListener( "click", function(e){
+      e.preventDefault();
+      if (test.classList.contains("lance")) {
+          stop();
+      }
+
+      else {
+          lancement();
+      }
+  });
+
         
-  
-        })
-    }
-};
 
 
 
@@ -49,4 +58,3 @@ let playing = false;
 
 
 
-//test.src = imgArray[Math.floor(Math.random() * imgArray.length)].image;
