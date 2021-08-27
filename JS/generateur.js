@@ -8,12 +8,11 @@ let imgArray = [
     ];  
 let pointeur = 0;
 let legende = document.getElementById("legende");
-let lancement = document.getElementById("bouton-lancement");
-    lancement.onclick = ChangerImage; 
+let test = document.getElementById("test");
+    test.onclick = ChangerImage; 
+let playing = false;
 
   function ChangerImage(){
-
-    let test = document.getElementById("test");
     
     if(pointeur < imgArray.length - 1){
     pointeur++;
@@ -25,21 +24,27 @@ let lancement = document.getElementById("bouton-lancement");
     test.src = imgArray[pointeur].image;
     legende.classList.toggle("legende_visible");
 
+    test.classList.add("lance");
     let timing = setTimeout("ChangerImage()", 200); 
 
-   
-    test.addEventListener("click", function(e){
-    e.preventDefault();
-        clearTimeout(timing);
-    let imgText = imgArray[Math.floor(Math.random() * imgArray.length)];
-    test.src = imgText.image;
+        if (!playing) {
+        test.addEventListener("click", function(e){
+            test.classList.remove("lance");
 
-    legende.innerHTML = imgText.texte;
-    
-        console.log("IMAGE NAME =>", imgText);
-      
-    })
+            clearTimeout(timing);
+            let imgText = imgArray[Math.floor(Math.random() * imgArray.length)];
+            test.src = imgText.image;
+
+            legende.innerHTML = imgText.texte;
+            console.log("IMAGE NAME =>", imgText);
+        
+  
+        })
+    }
 };
+
+
+
 
 
 
