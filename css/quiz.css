@@ -293,56 +293,123 @@ body {
 }
 
 body {
-  background: #fff;
-}
-
-.barre-separation {
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(to right, #afcaf3, #10e0d5, #afcaf3, #10e0d5, #afcaf3);
+  background-image: url(../assets/images/Snapchat-1993855060-removebg-preview.png);
+  color: #423a3a;
+  background-position-y: 100px;
 }
 
 .texte {
-  text-shadow: -0.0075em 0.0075em 0 #f2f7fe, 0.005em 0.005em 0 #abc9f7, 0.01em 0.01em 0 #b0ccf7, 0.015em 0.015em #b4cff8, 0.02em 0.02em 0 #b8d1f8, 0.025em 0.025em 0 #bcd4f9, 0.03em 0.03em 0 #c0d7f9, 0.035em 0.035em 0 #c4d9f9;
+  text-shadow: -0.0075em 0.0075em 0 #fef4f2, 0.005em 0.005em 0 #f7b4ab, 0.01em 0.01em 0 #f7b8b0, 0.015em 0.015em #f8bcb4, 0.02em 0.02em 0 #f8bfb8, 0.025em 0.025em 0 #f9c3bc, 0.03em 0.03em 0 #f9c7c0, 0.035em 0.035em 0 #f9cbc4;
 }
 
 .header {
-  background-color: #10e0d5;
+  background-color: #eef09d;
 }
 
-.titre {
+.texte {
+  color: #fcf6ec;
+}
+
+.ligne {
+  background: #fcf6ec;
+}
+
+main {
+  font-family: "Lato-regular";
+}
+
+h1 {
   text-align: center;
-  margin: 30px;
-  font-size: 3em;
-  color: #10e0d5;
-  -webkit-text-stroke: 0.4px black;
+  margin: 10px 0 10px 0;
+  border-radius: 34px;
 }
 
-.generateur {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.test, #legende {
+label {
+  font-family: "Lato-regular";
+}
+
+.question_bloc {
   width: 100%;
+  border: solid 2px #eef09d;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 3px #f5aba1;
+  background: #fffffc;
 }
 
-.legende_invisible {
-  visibility: hidden;
+.intitule_question {
+  font-size: 1.2em;
+  padding: 5px 5px 4px 5px;
+  font-weight: bold;
 }
 
-.cadre--exterieur {
-  border: dotted 5px red;
-  padding: 2%;
+.option {
+  padding: 3px 0px 0px 5px;
+}
+
+.bouton_radio {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.form_quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bouton_valider {
+  padding: 5px 10px 5px 10px;
+  margin: 10px 0 10px 0;
+  border: none;
+  border-radius: 20px;
+  font-family: "Lato-regular";
+  font-weight: bold;
+  font-size: 1.2em;
+  background: #fcf6ec;
+  cursor: pointer;
+  border: dotted 4px #eef09d;
   width: 50%;
-  background: yellow;
+}
+.bouton_valider:hover {
+  border: dotted 4px #eb7a2e;
 }
 
-.cadre--interieur {
-  border: dotted 5px purple;
+.commentaire {
+  background: white;
+  font-family: "Lato-regular";
+  font-size: 1.2em;
+  border-radius: 20px;
+  border: solid;
+  width: 100%;
   padding: 2%;
-  background: green;
+  text-align: center;
+  background: #fcf6ec;
 }
 
-/*# sourceMappingURL=generateur.css.map */
+.bonne_reponse {
+  font-family: "Lato-regular";
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px 5px 5px 5px;
+  color: lightcoral;
+}
+
+.bouton {
+  width: 45%;
+  border: solid lightcoral 2px;
+  border-radius: 20px;
+  font-family: "Lato-regular";
+  font-weight: bold;
+  margin: 5px;
+  background-color: #fcf6ec;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=quiz.css.map */

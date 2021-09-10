@@ -33,7 +33,7 @@ body {
 .paw {
   cursor: pointer;
   z-index: 101;
-  width: 15%;
+  width: 13%;
   transform: rotate(110deg);
   position: fixed;
 }
@@ -60,7 +60,7 @@ ul a:hover {
   z-index: 3;
   display: block;
   margin: 0;
-  width: 60%;
+  width: 50%;
   height: 650px;
   border-radius: 50%;
   display: flex;
@@ -81,7 +81,7 @@ ul a:hover {
   opacity: 1;
   z-index: 4;
   list-style: none;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 /*# sourceMappingURL=accueil.css.map */

@@ -1,0 +1,136 @@
+@import 'gallerie.scss';
+
+body {
+    background-image: url(../assets/images/Snapchat-1993855060-removebg-preview.png);
+	color: #423a3a;
+	background-position-y: 100px;
+}
+
+.texte{
+text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, #eb442e, 94%),
+		0.005em 0.005em 0 mix(#fff, #eb442e, 60%),
+		0.01em 0.01em 0 mix(#fff, #eb442e, 62%), 
+		0.015em 0.015em mix(#fff, #eb442e, 64%), 
+		0.02em 0.02em 0 mix(#fff, #eb442e, 66%), 
+		0.025em 0.025em 0 mix(#fff, #eb442e, 68%),
+		0.03em 0.03em 0 mix(#fff, #eb442e, 70%),
+		0.035em 0.035em 0 mix(#fff, #eb442e, 72%);
+}
+
+.header {
+    background-color: #eef09d;
+}
+
+.texte{
+	color: #fcf6ec;
+}
+
+.ligne {
+	background: #fcf6ec;
+}
+
+main {
+	font-family: 'Lato-regular';
+}
+
+h1{
+	text-align: center;
+	margin: 10px 0 10px 0;
+	border-radius: 34px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;;
+}
+
+label{
+	font-family: "Lato-regular";
+}
+
+.question_bloc
+{
+	width: 100%;
+	border: solid 2px #eef09d;
+	margin-bottom: 10px;
+	box-shadow: 3px 3px 3px #f5aba1;
+	background: #fffffc;
+}
+
+.intitule_question{
+	font-size: 1.2em;
+	padding: 5px 5px 4px 5px;
+	font-weight: bold;
+}
+
+.option{
+	padding: 3px 0px 0px 5px;}
+
+.bouton_radio{
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.form_quiz {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+
+.bouton_valider{
+	padding: 5px 10px 5px 10px;
+	margin: 10px 0 10px 0;
+	border: none;
+	border-radius: 20px;
+	font-family: "Lato-regular";
+	font-weight: bold;
+	font-size: 1.2em;
+	background: #fcf6ec;
+	cursor: pointer;
+	border: dotted 4px #eef09d;
+	width: 50%;
+&:hover{
+	border: dotted 4px #eb7a2e;	
+}
+}
+
+.commentaire{
+	background: white;
+	font-family: "Lato-regular";
+	font-size: 1.2em;
+	border-radius: 20px;
+    border: solid;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+	background: #fcf6ec;
+}
+
+.bonne_reponse
+{
+	font-family: "Lato-regular";
+	font-weight: bold;
+	font-style: italic;
+	padding: 10px 5px 5px 5px;
+	color:lightcoral;
+}		
+
+
+
+.bouton{
+	width: 45%;
+    border: solid lightcoral 2px;
+    border-radius: 20px;
+    font-family: "Lato-regular";
+    font-weight: bold;
+    margin: 5px;
+	background-color:#fcf6ec;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+
+

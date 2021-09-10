@@ -4,7 +4,12 @@
 let imgArray = [
     {image : "../assets/images/17.jpg", texte : "legende 17"},
     {image :"../assets/images/19.jpeg", texte :"legende 19"},
-    {image : "../assets/images/20.jpeg", texte :"legende 20"}, 
+    {image : "../assets/images/1.jpg", texte :"legende 20"},
+    {image : "../assets/images/2.jpg", texte :"legende 2"},
+    {image : "../assets/images/3.jpg", texte :"legende 3"},
+    {image : "../assets/images/4.jpg", texte :"legende 4"},
+    {image : "../assets/images/5.jpg", texte :"legende 5"},
+    {image : "../assets/images/6.jpg", texte :"legende 6"}, 
     ];  
 let pointeur = 0;
 let legende = document.getElementById("legende");
